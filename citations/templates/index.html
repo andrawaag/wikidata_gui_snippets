@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PMID/DOI resolver</title>
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/styles.css') }}">
+</head>
+
+<body>
+    <h1>Resolve a DOI or PMID on Wikidata</h1>
+
+    <form action="getqid" method="post" enctype="multipart/form-data">
+        <table>
+            <tr><td><label>Add PMID or DOI</label></td><td><input type="text" name="refid"  size="25" /></td></tr>
+        <tr><td><input type="submit" name="button" value="PMID"></td></td><td><input type="submit" name="button" value="DOI"></td></tr>
+        </table>
+    </form>
+
+</body>
+
+</html>
+
